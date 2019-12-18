@@ -97,7 +97,30 @@ class SortingRobot:
         Sort the robot's list.
         """
         # Fill this out
-        pass
+        # I want to pick up the item at [0] position then move right along the list 
+        for i in range(len(self._list) - 1):
+            self.swap_item()
+            self.move_right()
+        # while i am able to move right I want to compare each item 
+        # if next item is greater I want to swap those items an continue moving right
+        #if not keep moving right 
+            while self.can_move_right():
+                if self.compare_item() == 1:
+                    self.swap_item()
+                    self.move_right()
+                else:
+                    self.move_right()
+
+            if self.compare_item() == 1:
+                self.swap_item()
+            # 
+            for _ in range(i, len(self._list) - 1):
+                self.move_left()
+
+            self.swap_item()
+            self.move_right()
+
+        return self._list
 
 
 if __name__ == "__main__":
