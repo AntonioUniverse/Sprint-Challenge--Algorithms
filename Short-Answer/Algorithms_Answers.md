@@ -3,14 +3,14 @@
 ## Exercise I
 
 a) O( n )
- the input size will increase the runtime at the same rate.
+ as the the my imput size increase the umber of number of operations increase as well.
 
 
 b)O(n log n)
  as the input size grows the longer runtime will grow faster due to n being used for both loops
 
-c)0(c^n)
-as the input grows for the amout of bunnies the longer runtime increase much faster, but you can stop that by caching those values. 
+c)0(n)
+ as the the my imput size increase the umber of number of operations increase as well.
 
 ## Exercise II
 
